@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <!-- Login -->
     <div id="loginForm" class="login-form">
         <h2>Iniciar Sesión</h2>
@@ -26,3 +27,62 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<!-- Dashboard -->
+<div id="dashboard" style="display: none;">
+    <h1>Monitoreo de Sensores</h1>
+    <div class="sensor" id="sensorTemperatura">
+        <span>Temperatura: </span><span id="temperaturaValue">Cargando...</span>
+    </div>
+    <div class="sensor" id="sensorHumo">
+        <span>Humo: </span><span id="humoValue">Cargando...</span>
+    </div>
+    <div class="sensor" id="sensorMovimiento">
+        <span>Movimiento: </span><span id="movimientoValue">Cargando...</span>
+    </div>
+    <button id="verRegistros" class="action-button">Ver Registros</button>
+</div>
+<!-- Registros -->
+<div id="registros" style="display: none;">
+    <h1>Registros de Sensores</h1>
+    <div>
+        <h2>Temperatura</h2>
+        <table id="tablaTemperatura">
+            <thead>
+                <tr>
+                    <th>Fecha y Hora</th>
+                    <th>Valor</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div>
+        <h2>Humo</h2>
+        <table id="tablaHumo">
+            <thead>
+                <tr>
+                    <th>Fecha y Hora</th>
+                    <th>Valor</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div>
+        <h2>Movimiento</h2>
+        <table id="tablaMovimiento">
+            <thead>
+                <tr>
+                    <th>Fecha y Hora</th>
+                    <th>Valor</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <button id="volverDashboard" class="action-button">Volver al Dashboard</button>
+</div>
